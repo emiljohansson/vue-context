@@ -4,6 +4,9 @@
   "description": "Creates a React like context between parent and child components",
   "main": "dist/vue-context.js",
   "types": "dist/vue-context.d.ts",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",

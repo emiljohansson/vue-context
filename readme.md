@@ -14,7 +14,7 @@ $ npm install @emiljohansson/vue-context
 ```
 
 ```javascript
-import VueContext from 'vue-context'
+import VueContext from '@emiljohansson/vue-context'
 
 Vue.use(VueContext)
 ```

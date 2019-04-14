@@ -11,7 +11,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "build": "tsc -p tsconfig.json --declaration",
+    "build": "tsc -p config/tsconfig.json --declaration",
     "serve:demo": "npm run build && parcel ./demo/index.html -d demo/dist --no-cache",
     "build:demo": "npm run build && parcel build ./demo/index.html -d demo/build --public-url ./ --no-cache"
   },
@@ -45,7 +45,7 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/vue-context.ts"
+      "src/vue-context.ts"
     ],
     "moduleFileExtensions": [
       "ts",
@@ -56,12 +56,12 @@
       ".*\\.(ts|vue)$": "<rootDir>/node_modules/vue-typescript-jest/preprocessor.js"
     },
     "testMatch": [
-      "**/test.ts"
+      "**/src/test.ts"
     ],
     "globals": {
       "ts-jest": {
         "babelConfig": true,
-        "tsConfig": "tsconfig.jest.json"
+        "tsConfig": "config/tsconfig.jest.json"
       }
     },
     "coveragePathIgnorePatterns": [

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
+    "rootDir": "../src",
+    "outDir": "../dist",
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
@@ -23,13 +24,16 @@
       "es5"
     ],
     "typeRoots": [
-      "node_modules/@types"
+      "../node_modules/@types"
     ]
   },
+  "include": [
+    "../src/vue-context.ts"
+  ],
   "exclude": [
-    "node_modules",
-    "test.ts",
-    "demo",
-    "dist"
+    "../node_modules",
+    "../src/test.ts",
+    "../demo",
+    "../dist"
   ]
 }

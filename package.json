@@ -1,5 +1,5 @@
 {
-  "name": "vue-context",
+  "name": "@emiljohansson/vue-context",
   "version": "0.0.0",
   "description": "Creates a React like context between parent and child components",
   "main": "dist/vue-context.js",

@@ -2,6 +2,10 @@
 
 Creates a React like context between parent and child components.
 
+## Demo
+
+**https://emiljohansson.github.io/vue-context/demo/build/**
+
 ## Install
 
 #### NPM

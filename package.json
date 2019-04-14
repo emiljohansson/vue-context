@@ -1,0 +1,73 @@
+{
+  "name": "vue-context",
+  "version": "0.0.0",
+  "description": "Creates a React like context between parent and child components",
+  "main": "dist/vue-context.js",
+  "types": "dist/vue-context.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "build": "tsc -p tsconfig.json --declaration",
+    "serve:demo": "npm run build && parcel ./demo/index.html -d demo/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emiljohansson/vue-context"
+  },
+  "keywords": [
+    "vue",
+    "vue-context",
+    "provider",
+    "inject"
+  ],
+  "author": "Emil Johansson <emiljohansson.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "@vue/component-compiler-utils": "3.0.0",
+    "babel-eslint": "10.0.1",
+    "jest": "24.7.1",
+    "parcel-bundler": "1.12.3",
+    "ts-jest": "24.0.2",
+    "typescript": "3.4.3",
+    "vue": "2.6.10",
+    "vue-hot-reload-api": "2.3.3",
+    "vue-template-compiler": "2.6.10",
+    "vue-typescript-jest": "0.3.1"
+  },
+  "posthtml": {
+    "recognizeSelfClosing": true
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/vue-context.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts?$": "ts-jest",
+      ".*\\.(ts|vue)$": "<rootDir>/node_modules/vue-typescript-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/test.ts"
+    ],
+    "globals": {
+      "ts-jest": {
+        "babelConfig": true,
+        "tsConfig": "tsconfig.jest.json"
+      }
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "text-summary"
+    ]
+  }
+}

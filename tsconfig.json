@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "noImplicitUseStrict": true,
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "es5"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "test.ts",
+    "demo",
+    "dist"
+  ]
+}

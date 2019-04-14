@@ -9,7 +9,8 @@
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
     "build": "tsc -p tsconfig.json --declaration",
-    "serve:demo": "npm run build && parcel ./demo/index.html -d demo/dist"
+    "serve:demo": "npm run build && parcel ./demo/index.html -d demo/dist",
+    "build:demo": "npm run build && parcel build ./demo/index.html -d demo/build --public-url ./"
   },
   "repository": {
     "type": "git",

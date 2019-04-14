@@ -3,6 +3,7 @@
 node_modules
 coverage
 demo
+demo/build
 demo/dist
 
 # local env files
